@@ -387,6 +387,9 @@ h5 {
   .row {
     display: flex;
   }
+  .rowmini {
+    margin-top: 180px;
+  }
   .fa-bars {
     cursor: pointer;
   }
