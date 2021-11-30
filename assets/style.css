@@ -80,14 +80,6 @@ input[type="search"]:focus {
   border: 1px rgb(15, 109, 185) solid;
   background-color: var(--col3);
   outline: 0;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  
-=======
->>>>>>> Stashed changes
-=======
-  
->>>>>>> 4cbdfd5... background
 }
 
 input::placeholder {
@@ -157,7 +149,7 @@ main {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  border:0;
+  border: 0;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .i {
@@ -291,17 +283,146 @@ h5 {
 .english-artist img {
   width: 50%;
 }
-/* for artist page */
-/* h5 {
-  color: var(--col1);
+
+#hamburger {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--col4),
+    var(--col5),
+    var(--col4),
+    var(--col5)
+  );
+  /* background-color: rgb(79, 170, 250); */
+  position: fixed;
+  z-index: 999;
+  margin-top: 0;
 }
-#art {
-  width: 25%;
+
+.up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.white {
   color: white;
 }
-a {
-  text-decoration: none;
+.cross {
+  padding: 15px;
+  align-self: baseline;
 }
-artist:hover {
-  color: var(--col1);
-} */
+.option {
+  display: flex;
+  flex-direction: column;
+}
+.op h3 {
+  text-align: center;
+  color: white;
+}
+.option i {
+  color: White;
+  padding-right: 20px;
+}
+.op {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  margin-bottom: 3px;
+}
+.op:hover {
+  border-bottom: 3px solid rgb(211, 211, 211);
+  transition: 0.2s;
+  transition-delay: 0.1s;
+  background-color: rgba(101, 194, 238, 0.4);
+  color: rgb(218, 212, 212);
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1101px) and (max-width: 2000px) {
+  #hamburger,
+  .label i {
+    display: none;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+  #hamburger,
+  .label i {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  main {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  .grow {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .artist {
+    width: 33.33%;
+  }
+  .disc {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #hamburger,
+  .search,
+  .bell,
+  .user {
+    display: none;
+  }
+  .rowsmall,
+  .row {
+    display: flex;
+  }
+  .fa-bars {
+    cursor: pointer;
+  }
+  .label {
+    padding: 30px;
+  }
+  .label i {
+    color: white;
+  }
+  main {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  aside {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+  .grow {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .artist {
+    width: 50%;
+  }
+  .english-artist {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .english-artist div {
+    width: 50%;
+  }
+  .disc {
+    width: 95%;
+  }
+}

@@ -11,10 +11,10 @@ const cover = document.getElementById("cover");
 const currTime = document.querySelector("#currTime");
 const durTime = document.querySelector("#durTime");
 // Song titles
-const songs = ["hips", "On My Way", "perfect"];
+const songs = ["Hips", "On My Way", "Perfect"];
 
 // Keep track of song
-let songIndex = 0;
+let songIndex = 1;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
@@ -22,6 +22,7 @@ lyrics(songs[songIndex]);
 // Update song details
 function loadSong(song) {
   title.innerText = song;
+  title.style.color = "white";
   audio.src = `assets/songs/${song}.mp3`;
   cover.src = `assets/images/${song}.jpg`;
 }

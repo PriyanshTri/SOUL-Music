@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,32 +69,91 @@
         <a href="#"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a>
       </div>
       <div class="user">
-        <a href="login.html"><img src="assets/images/user.jpg" alt="user" /></a>
+        <a href="login.html"
+          ><i class="fa fa-user-circle fa-2x white" style="margin-top: 5px"></i
+        ></a>
+      </div>
+
+      <input type="checkbox" name="check" id="check" />
+      <label for="check" class="label"><i class="fa fa-bars fa-2x"></i></label>
+      <div id="hamburger">
+        <div class="up">
+          <div class="logo">
+            <a href="#"
+              ><img id="logo_img" src="assets/images/PMT (2).svg" alt="logo" />
+              <h2 id="name" style="display: inline; position: absolute">
+                <span id="soul"> SOUL</span><br />
+                <span id="music"> music</span>
+              </h2></a
+            >
+          </div>
+          <div class="cross">
+            <label for="check"><i class="fa fa-times fa-2x white"></i></label>
+
+            <label for="check"></label>
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="op">
+            <i class="fa fa-search fa-2x"></i>
+            Search
+          </div>
+          <div class="op">
+            <i class="fa fa-home fa-2x"></i>
+            Home
+          </div>
+          <div class="op">
+            <i class="fa fa-user fa-2x"></i>
+            Profile
+          </div>
+          <div class="op" onclick="location.href='error.html'">
+            <i class="fa fa-heart fa-2x"></i>
+            Favourites
+          </div>
+          <div class="op">
+            <i class="fa fa-address-card fa-2x"></i>
+            About Us
+          </div>
+          <div class="op" onclick="location.href='login.html'">
+            <i class="fa fa-sign-out fa-2x"></i>
+            Log Out
+          </div>
+        </div>
       </div>
     </nav>
     <!-- main content -->
     <div class="main">
       <main>
         <!-- top -->
-        <div class="row">
+        <div class="row rowsmall">
           <div class="music-top animate__animated animate__zoomIn">
-            <img src="assets/images/Latin-Club.jpg" alt="latin club" />
+            <img
+              src="assets/images/Latin-Club.jpg"
+              alt="latin club"
+              onclick="location.href='player.html'"
+            />
           </div>
           <div class="music-top animate__animated animate__zoomIn">
             <img
               src="assets/images/Mood-Booster.jpg"
               alt="mood booster songs"
+              onclick="location.href='player.html'"
             />
           </div>
           <div class="music-top animate__animated animate__zoomIn">
-            <img src="assets/images/EDM.jpg" alt="edm songs" />
+            <img
+              src="assets/images/EDM.jpg"
+              alt="edm songs"
+              onclick="location.href='player.html'"
+            />
           </div>
         </div>
         <!-- latest release -->
         <div class="white heading">Latest Release</div>
         <div class="row wrap">
           <!-- music card -->
-          <div class="song">
+          <div class="song" onclick="location.href='player.html'">
             <div class="image">
               <img src="assets/images/headphone.jpg" alt="song" />
             </div>
@@ -111,7 +169,7 @@
             </div>
             <div class="white time">4:44</div>
           </div>
-          <div class="song">
+          <div class="song" onclick="location.href='player.html'">
             <div class="image">
               <img src="assets/images/headphone.jpg" alt="song" />
             </div>
@@ -127,7 +185,7 @@
             </div>
             <div class="white time">4:44</div>
           </div>
-          <div class="song">
+          <div class="song" onclick="location.href='player.html'">
             <div class="image">
               <img src="assets/images/headphone.jpg" alt="song" />
             </div>
@@ -143,7 +201,7 @@
             </div>
             <div class="white time">4:44</div>
           </div>
-          <div class="song">
+          <div class="song" onclick="location.href='player.html'">
             <div class="image">
               <img src="assets/images/headphone.jpg" alt="song" />
             </div>
@@ -176,7 +234,7 @@
             </a>
           </div>
           <div class="artist">
-            <a href="artist">
+            <a href="artist.html">
               <img src="assets/images/coldplay.jpg" alt="coldplay" />
               <h3 class="white">Coldplay</h3>
             </a>
@@ -207,28 +265,57 @@
         <!-- channel -->
         <div class="row card">
           <div class="channel">
-            <img src="assets/images/music_channel1.jpg" alt="channel" />
+            <img
+              src="assets/images/music_channel1.jpg"
+              alt="channel"
+              onclick="location.href='player.html'"
+            />
           </div>
           <div class="channel">
-            <img src="assets/images/music channel2.jpg" alt="channel2" />
+            <img
+              src="assets/images/music channel2.jpg"
+              alt="channel2"
+              onclick="location.href='player.html'"
+            />
           </div>
           <div class="channel">
-            <img src="assets/images/music channel3.jpg" alt="channel3" />
+            <img
+              src="assets/images/music channel3.jpg"
+              alt="channel3"
+              onclick="location.href='player.html'"
+            />
           </div>
           <div class="channel">
-            <img src="assets/images/music channel4.jpg" alt="channel4" />
+            <img
+              src="assets/images/music channel4.jpg"
+              alt="channel4"
+              onclick="location.href='player.html'"
+            />
           </div>
         </div>
         <!-- party -->
         <div class="row space party">
-          <div><img src="assets/images/party.png" alt="party" /></div>
+          <div>
+            <img
+              src="assets/images/party.png"
+              alt="party"
+              onclick="location.href='player.html'"
+            />
+          </div>
           <div>
             <img
               src="assets/images/electronic-music.jpg"
               alt="electronic-music"
+              onclick="location.href='player.html'"
             />
           </div>
-          <div><img src="assets/images/road trip.jpg" alt="" /></div>
+          <div>
+            <img
+              src="assets/images/road trip.jpg"
+              alt="travelling music"
+              onclick="location.href='player.html'"
+            />
+          </div>
         </div>
         <!-- Latest english -->
         <div class="heading white">Latest English</div>
@@ -261,7 +348,7 @@
           </h5>
         </div>
         <ol>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -288,7 +375,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -315,7 +402,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -342,7 +429,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -369,7 +456,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -396,7 +483,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -423,7 +510,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -450,7 +537,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -477,7 +564,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -504,7 +591,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -531,7 +618,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -558,7 +645,7 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li onclick="location.href='player.html'">
             <table>
               <tr>
                 <td rowspan="2">
@@ -588,5 +675,15 @@
         </ol>
       </aside>
     </div>
+    <script>
+      var hamButton = document.getElementById("check");
+      hamButton.addEventListener("click", function () {
+        if (hamButton.checked) {
+          document.getElementById("hamburger").style.display = "block";
+        } else {
+          document.getElementById("hamburger").style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>

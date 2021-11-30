@@ -29,6 +29,33 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+nav {
+  display: flex;
+  margin-right: 6%;
+}
+nav .logo {
+  margin-top: 0;
+  margin-right: 0;
+}
+nav div {
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+#logo_img {
+  width: 90px;
+  height: 90px;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#music {
+  color: var(--col1);
+}
 ::selection {
   background: #8842fa;
   color: #fff;
